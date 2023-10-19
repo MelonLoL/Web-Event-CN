@@ -19,51 +19,74 @@
     <div class="d-flex">
         <!-- Sidebar -->
         <div class="sidebar" id="side_nav">
-            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
-                <img src="../../img/Logo CN.png" alt="" style="max-width: 100px; max-height: 100px;"><button
+            <!-- Header -->
+            <div class="header-box px-2 pt-3 d-flex justify-content-between">
+                <img src="../../img/Logo CN.png" alt=""
+                    style="max-width: 110px; max-height: 110px; margin-left: auto; margin-right: auto"><button
                     class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="fal fa-stream"></i></button>
             </div>
-            <div class="text-light mx-3">
-                <hr>
-            </div>
+            <!-- End of Header -->
 
-            <ul class="list-unstyled px-1">
-                <li><a href="" class="text-decoration-none"><i
-                            class="fa-solid fa-house ms-3 me-5 py-3 fs-6"></i>Home</a>
+            <!-- HR -->
+            <hr class="text-light mx-3">
+            <!-- End of HR -->
+
+            <!--  Body -->
+            <ul class="list-unstyled px-2">
+                <li class="">
+                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-house"></i>
+                        <span class="px-5">Home</span></a>
                 </li>
-
-                <li><a href="" class="text-decoration-none"><i class="fa-solid fa-clock ms-3 me-5 py-3"></i>Acara</a>
+                <li class="">
+                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-clock"></i>
+                        <span class="px-5">Acara</pan>
+                    </a>
                 </li>
-
-                <li><a href="" class="text-decoration-none"><i class="fa-solid fa-clipboard ms-3 me-5 py-3"></i>Tamu</a>
+                <li class="active">
+                    <a href="../Daftar-Tamu" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-clipboard"></i>
+                        <span class="px-5">Tamu</span>
+                    </a>
                 </li>
-
-                <li><a href="" class="text-decoration-none"><i class="fa-solid fa-user ms-3 me-5 py-3"></i></i>Users</a>
+                <li class="">
+                    <a href="../Users" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-user"></i>
+                        <span class="px-5">Users</span>
+                    </a>
                 </li>
             </ul>
+            <!-- End of Body -->
 
+            <!-- HR -->
+            <hr class="text-light mx-3">
+            <!-- End ofHR -->
+
+            <!-- Sidebar Footer -->
+            <ul class="list-unstyled px-2">
+                <li class="">
+                    <a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="fa-solid fa-user"></i>
+                        <span class="px-5">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End of Sidebar Footer -->
         </div>
         <!-- End of Sidebar  -->
+
         <!-- Konten -->
         <div class="content">
             <!-- Navbar -->
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <div class="container-fluid">
-                    <div class="d-flex justify-content-between d-md-none d-block">
-                        <button class="btn px-1 py-0 open-btn me-2"><i class="fal fa-stream"></i></button>
-
-                    </div>
-                    <div class="d-flex container-fluid justify-content-between">
-                        <h5 class="ms-3 mt-2" style="font-family: 'Montserrat', sans-serif;">Daftar Tamu</h5>
-                        <img class="rounded-circle me-2 my-1" src="../../img/event1.png" alt=""
-                            style="width: 30px; max-height: 30px;">
-                    </div>
+                    <button class="btn px-1 py-0 open-btn me-2 d-md-none"><i class="fal fa-stream"></i></button>
+                    <h5 class="ms-3 mt-2" style="font-family: 'Montserrat', sans-serif;">Daftar Tamu</h5>
+                    <img class="rounded-circle me-2 my-1" src="../../img/event1.png" alt=""
+                        style="width: 30px; max-height: 30px;">
                 </div>
             </nav>
             <!-- End of Navbar -->
+
             <!-- Main Konten -->
-            <div class="container-fluid">
-                <div class="row p-4">
+            <div class="container-fluid mt-3">
+                <div class="row">
                     <div class="col">
                         <div class="card shadow p-sm-4">
                             <div class="table-responsive">
@@ -79,8 +102,965 @@
                                                 <th scope="col">Asal</th>
                                                 <th scope="col">Actions</th>
                                             </tr>
-                                        </thead>        
+                                        </thead>
                                         <tbody class="text-center">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Firman Putra Fajrian Gosling</td>
+                                                <td>0896-3759-6479</td>
+                                                <td>firmanfajrian@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#fajri">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Sutan Pangeran Aryakado Avocado</td>
+                                                <td>0895-3841-49668</td>
+                                                <td>sutanikocado@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK CITRA NEGARA</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#sutan">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cahya Skibidi Toilet</td>
+                                                <td>0858-7578-7494</td>
+                                                <td>herisetiawan@gmail.com</td>
+                                                <td>Pelajar</td>
+                                                <td>SMK Muhammadiyah 1 Samarinda</td>
+                                                <td>
+                                                    <div class="container text-center">
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="">
+                                                            <i class="bi bi-pencil-fill"></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            role="button">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </a>
+                                                        <!-- Modal Button -->
+                                                        <button type="button"
+                                                            class="btn bg-black text-white rounded rounded-1 px-4 py-1"
+                                                            data-bs-toggle="modal" data-bs-target="#cahya">
+                                                            <i class="bi bi-zoom-in"></i>
+                                                        </button>
+                                                        <!-- End of Modal Button -->
+                                                    </div>
+                                                </td>
+                                            </tr>
                                             <tr>
                                                 <th scope="row">1</th>
                                                 <td>Firman Putra Fajrian Gosling</td>
