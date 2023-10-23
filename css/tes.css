@@ -1,96 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&family=Montserrat&display=swap");
-
-
-
 body {
-    background: #D9D9D9;
+  background: #eee;
 }
 
-.sidebar {
-    background: #260354;
-    width: 20%;
-    position: relative;
-    font-family: 'Baloo Thambi 2', cursive;
+#side_nav {
+  background: #260354;
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
 }
 
-.sidebar .side_header {
-    background-color: #170033b9;
-    width: 100%;
+.content {
+  min-height: 100vh;
+  width: 100%;
 }
 
-.sidebar .side_header img {
-    max-height: 125px;
-    max-width: 125px;
-    padding: 10px;
+hr.h-color {
+  background: #eee;
 }
 
-.sidebar .side_header .judul {
-    text-align: center;
-    color: #fff;
-    font-size: larger;
+.sidebar li.active {
+  background: #eee;
+  border-radius: 8px;
 }
 
-.sidebar ul li {
-    line-height: 75px;
-    border-bottom: 1px #3c3838 solid;
-    width: 100%;
-    display: block;
-    text-decoration: none;
-    padding-left: 40px;
+.sidebar li.active a,
+.sidebar li.active a:hover {
+  color: #000;
 }
-
-
-
-.sidebar ul a {
-    color: #fff;
-    font-size: larger;
-    text-decoration: none;
-}
-
-
-.sidebar ul a :hover {
-    background-color: #0c001b;
-    cursor: pointer;
-    border-left: 10px solid #fff;
-    transition: 0.4s;
-}
-
-#menu_logout :hover {
-    background-color: #0c001b;
-    cursor: pointer;
-}
-
-.logout {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 15px;
-}
-
-.garis {
-    color: white;
-
-}
-
-
-.konten {
-    min-height: 100vh;
-    width: 100%;
-}
-
-
-/* .sidebar #menu  :hover {
-   color: black;
-   transform:matrix(1.1)
-    
-} */
 
 .sidebar li a {
-    color: white;
-
+  color: #fff;
 }
 
-#btn {
-    font-family: 'Baloo Thambi 2', cursive;
+@media(max-width: 767px) {
+  #side_nav {
+    margin-left: -250px;
+    position: absolute;
+    min-height: 100vh;
+    z-index: 1;
+
+  }
+
+  #side_nav.active {
+    margin-left: 0;
+  }
 }
 
-/* TUTUP SIDEBAR */
