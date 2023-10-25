@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah User</title>
+    <title>Update Tamu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +76,7 @@
             <nav class="navbar bg-body-tertiary shadow mb-3 bg-body-tertiary">
                 <div class="container-fluid">
                     <div class="d-flex container-fluid justify-content-between">
-                        <h5 class="ms-3 mt-2" style="font-family: 'Montserrat', sans-serif;">Tambah User </h5>
+                        <h5 class="ms-3 mt-2" style="font-family: 'Montserrat', sans-serif;">Update Tamu</h5>
                     </div>
                 </div>
             </nav>
@@ -86,7 +86,7 @@
             <div class="container-fluid mt-3">
                 <div class="row">
                     <div class="col">
-                        <div class="card shadow">
+                        <div class="card shadow mb-4">
                             <!-- Card Body -->
                             <div class="card-body">
                                 <form action="" class="px-4">
@@ -95,21 +95,43 @@
                                         <input type="text" class="form-control" name="" id="nama lengkap">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="username" class="form-label">Username</label>
-                                        <input type="text" class="form-control" name="" id="nomor username">
+                                        <label for="nomor telepon" class="form-label">No Telepon</label>
+                                        <input type="number" class="form-control" name="" id="nomor telepon">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password" class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="" id="password">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" name="" id="email">
                                     </div>
-                                    
-
+                                    <div class="mb-3">
+                                        <label for="profil" class="form-label">Profil</label>
+                                        <select class="form-select form-select-lg" name="" id="profil">
+                                            <option selected disabled>Pilih...</option>
+                                            <option value="">SD</option>
+                                            <option value="">SMP</option>
+                                            <option value="">SMK</option>
+                                            <option value="">SMA</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="status" class="form-label">Status</label>
+                                        <input type="text" class="form-control" name="" id="status">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="asal" class="form-label">Asal</label>
+                                        <input type="text" class="form-control" name="" id="asal">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Perihal</label>
+                                        <textarea class="form-control" name="" id="" rows="3"></textarea>
+                                    </div>
                                     <div class="d-flex flex-row-reverse">
-                                        <div class="">
+                                        <div>
                                             <button type="submit" class="btn px-4 text-white"
                                                 style="background-color: #260354;"><span id="btn">Tambah</span></button>
-                                                <a href="../Users/" id="" class="btn px-4 text-white" style="background-color: #260354;" href="#" role="button"><span id="btn">Batal</span></a>
+                                            <a href="../Daftar-Tamu/" class="btn px-4 text-white"
+                                                style="background-color: #260354;"><span id="btn">Batal</span></a>
                                         </div>
+
                                     </div>
                                 </form>
                             </div>
@@ -118,10 +140,9 @@
                 </div>
             </div>
             <!-- End of Main Konten -->
+            <!-- End of Konten -->
         </div>
-        <!-- End of Konten -->
     </div>
-
     <!-- Log Out Modal -->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
         aria-hidden="true">
